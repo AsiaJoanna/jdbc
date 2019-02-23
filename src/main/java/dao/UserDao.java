@@ -65,7 +65,7 @@ ps.executeUpdate();
         while (resultSet.next()){
             int id = resultSet.getInt("id");
             String firstName = resultSet.getString("firt_name");
-
+//
         }
 
         return users;
