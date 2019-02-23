@@ -13,16 +13,17 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         Database db = new Database();
         UserDao userDao = new UserDao(db);
-        User user = new User ("Joanna", "Jabłonka", "joannajablonka@gmail.com");
 
+    //    User user = new User (6,"Joanna", "Jabłonka", "joannajablonka@gmail.com");
 
-        Connection connection = db.getConnection();
+ //userDao.update();
+    //    Connection connection = db.getConnection();
 
-        PreparedStatement ps = connection.prepareStatement("INSERT INTO user (first_name, last_name, email) " +
-                "VALUES ('Joanna', 'Jabłonka', 'joannajablonka@gmail.com')");
+       // PreparedStatement ps = connection.prepareStatement("INSERT INTO user (first_name, last_name, email) " +
+      //          "VALUES ('Joannaooooo', 'Jabłonka', 'joannajablonka@gmail.com')");
 
-        ps.executeUpdate();
+      //  ps.executeUpdate();
 
-        connection.close();
+     //   connection.close();
     }
 }
