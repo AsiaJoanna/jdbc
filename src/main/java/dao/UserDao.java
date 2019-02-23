@@ -28,7 +28,8 @@ public class UserDao {
 
     }
     //update
-    public void update (User user){
+    public void update (User user) throws SQLException{
+
 
 
 
