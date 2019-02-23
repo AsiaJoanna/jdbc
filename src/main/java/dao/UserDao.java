@@ -29,6 +29,11 @@ public class UserDao {
     }
     //update
     public void update (User user) throws SQLException{
+String sql = "UPDATE user SET first_name=?, last_name=?, email=?" + "WHERE id=?";
+PreparedStatement ps = connection.prepareStatement (sql);
+ps.setString(1, user.getFirstName());
+ps.setString(2, user.getLastName());
+ps.setString(3, user.getEmail());
 
 
 
